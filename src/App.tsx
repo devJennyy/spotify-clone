@@ -125,7 +125,10 @@ function App() {
                   <p className="text-[20px]">
                     <IoSearchOutline />
                   </p>
-                  <p className="text-[14px]">Search in Your Library</p>
+                  <input
+                    className="text-[14px] w-[180px] py-1 bg-transparent outline-none text-white font-medium "
+                    placeholder="Search in Your Library"
+                  />
                 </button>
                 <button className="flex flex-row justify-center items-center gap-2 hover:text-[#F3F3F3]">
                   <p className="text-[14px] font-medium">Recents</p>
