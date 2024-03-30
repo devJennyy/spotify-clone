@@ -1,8 +1,4 @@
-import {
-  FaReact,
-  FaRegBell,
-  FaUsers,
-} from "react-icons/fa";
+import { FaReact, FaRegBell, FaUsers } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { GoHomeFill } from "react-icons/go";
 import { HiOutlineDotsHorizontal, HiOutlinePlusSm } from "react-icons/hi";
@@ -48,15 +44,16 @@ function App() {
             </button>
           </div>
 
-          <div className="pl-[220px]">
-            <div className="flex flex-row items-center justify-start bg-[#242424] w-[500px] h-12 rounded-full pl-3 hover:bg-[#2A2A2A] hover:border-[#404040] hover:border-[1px] border-[1px] border-[#242424]">
+          <div className="pl-[220px] ">
+            <div className="flex flex-row items-center justify-start bg-[#242424] w-[500px] h-12 rounded-full pl-3 hover:bg-[#2A2A2A] border-[1px] border-[#242424] hover:border-[#404040]">
               <button className="hover:text-[#F3F3F3]">
                 <FiSearch />
               </button>
-              <div className="flex justify-between items-center w-full">
-                <p className="text-[15px] font-medium pl-3">
-                  What do you want to play?
-                </p>
+              <div className="flex justify-between items-center w-full ">
+                <input
+                  className="w-[400px] py-1 bg-transparent outline-none text-white text-[15px] font-medium pl-3"
+                  placeholder="What do you want to play?"
+                />
                 <button className="border-l-[1px] border-[#A7A7A7] pl-3 pr-3 hover:text-[#F3F3F3]">
                   <FaReact />
                 </button>
@@ -312,7 +309,7 @@ function App() {
 
             <div className="flex flex-col px-7">
               <div className="flex flex-row gap-2">
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/dailymix-one.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -320,8 +317,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Liked Songs
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/dailymix-five.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -329,8 +326,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Old Songs
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/dailymix-two.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -338,8 +335,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Nostalgic Playlist
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/playlist-four.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -347,11 +344,11 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Mix Vibe
                   </p>
-                </div>
+                </button>
               </div>
 
               <div className="flex flex-row pt-2 gap-2">
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/dailymix-three.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -359,8 +356,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Daily Mix 1
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/playlist-two.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -368,8 +365,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Daily Mix 2
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/dailymix-four.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -377,8 +374,8 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Daily Mix 3
                   </p>
-                </div>
-                <div className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
+                </button>
+                <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
                     src="/images/playlist-five.jpeg"
                     className="w-[55px] h-[50px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -386,7 +383,7 @@ function App() {
                   <p className="text-white font-semibold text-[14px] pl-3">
                     Daily Mix 4
                   </p>
-                </div>
+                </button>
               </div>
             </div>
 
@@ -397,7 +394,7 @@ function App() {
             </div>
 
             <div className="flex flex-row px-4 py-2">
-              <div className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
+              <button className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
                 <div className="flex flex-col justify-center items-center text-left">
                   <img
                     src="/images/dailymix-one.jpeg"
@@ -412,9 +409,9 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
-              <div className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
+              <button className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
                 <div className="flex flex-col justify-center items-center text-left">
                   <img
                     src="/images/dailymix-two.jpeg"
@@ -429,9 +426,9 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
-              <div className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
+              <button className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
                 <div className="flex flex-col justify-center items-center text-left">
                   <img
                     src="/images/dailymix-three.jpeg"
@@ -446,9 +443,9 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
-              <div className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
+              <button className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
                 <div className="flex flex-col justify-center items-center text-left">
                   <img
                     src="/images/dailymix-four.jpeg"
@@ -463,9 +460,9 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
 
-              <div className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
+              <button className="hover:bg-[#1A1A1A] w-[200px] h-[235px] rounded-md py-3">
                 <div className="flex flex-col justify-center items-center text-left">
                   <img
                     src="/images/dailymix-five.jpeg"
@@ -480,7 +477,7 @@ function App() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
             </div>
 
             <div className="flex justify-start items-start px-7 py-7">
@@ -491,42 +488,42 @@ function App() {
 
             <div className="flex flex-col px-3 mr-1 w-full">
               <div className="flex flex-row justify-start">
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-one.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                </button>
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-two.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                </button>
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-three.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                </button>
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-four.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                </button>
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-five.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
-                <div className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
+                </button>
+                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
                   <img
                     src="/images/artist-six.jpeg"
                     className="w-[145px] h-[140px] rounded-full object-cover"
                   />
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -601,10 +598,12 @@ function App() {
         <div className="flex flex-row justify-between w-full h-[120px] pt-5 px-10 text-[#A7A7A7]">
           <div className="w-[380px]">
             <div className="flex flex-row items-center">
-              <img
-                src="/images/yaosobi.jpeg"
-                className="w-[60px] h-[60px] rounded-md object-cover"
-              />
+              <button>
+                <img
+                  src="/images/yaosobi.jpeg"
+                  className="w-[60px] h-[60px] rounded-md object-cover"
+                />
+              </button>
               <div className="flex flex-col justify-start items-start pl-5">
                 <button className="text-[14px] font-bold hover:underline underline-offset-4">
                   夜に駆ける
