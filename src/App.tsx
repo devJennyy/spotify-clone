@@ -26,7 +26,8 @@ import { MdFullscreenExit } from "react-icons/md";
 function App() {
   return (
     <>
-      <div className="flex flex-col bg-black w-full h-full pt-3">
+      {/*Web Container*/}
+      <div className="flex-col bg-black w-full h-full pt-3 md:flex hidden">
         {/*Navbar*/}
         <div className="flex flex-row justify-between items-center text-[#A7A7A7] text-[22px] px-10 w-full">
           <div className="flex flex-row justify-center items-center gap-5">
@@ -677,6 +678,30 @@ function App() {
             </div>
             <button className="hover:scale-110 transition-all hover:text-[#F3F3F3]">
               <MdFullscreenExit />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/*Mobile Container*/}
+      <div className="flex flex-col bg-[#121212] w-full h-full px-6 py-10">
+        <div className="flex flex-row justify-start items-center w-full">
+          <div className="w-[40px]">
+            <img
+              src="/images/power.jpg"
+              className="w-full h-[40px] rounded-full object-cover"
+            />
+          </div>
+
+          <div className="flex flex-row justify-start items-center font-medium text-[12px] gap-2 px-5">
+            <button className="bg-white text-black px-5 py-2 rounded-full">
+              All
+            </button>
+            <button className="bg-[#232323] text-white px-5 py-2 rounded-full hover:text-black hover:bg-white">
+              Music
+            </button>
+            <button className="bg-[#232323] text-white px-5 py-2 rounded-full hover:text-black hover:bg-white">
+              Podcasts
             </button>
           </div>
         </div>
