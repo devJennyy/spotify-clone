@@ -1,6 +1,6 @@
 import { FaReact, FaRegBell, FaUsers } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
-import { GoHomeFill } from "react-icons/go";
+import { GoHome, GoHomeFill } from "react-icons/go";
 import { HiOutlineDotsHorizontal, HiOutlinePlusSm } from "react-icons/hi";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { IoClose, IoSearchOutline, IoVolumeLowOutline } from "react-icons/io5";
@@ -484,7 +484,7 @@ function App() {
               </button>
             </div>
 
-            <div className="flex justify-start items-start px-7 py-7">
+            <div className="flex justify-start items-start px-7 py-4">
               <p className="text-white text-[24px] font-bold">
                 Your Top Artists
               </p>
@@ -684,12 +684,12 @@ function App() {
       </div>
 
       {/*Mobile Container*/}
-      <div className="flex flex-col bg-[#121212] w-full h-full py-10 text-[#A7A7A7]">
-        <div className="flex flex-row justify-start items-center w-full px-6">
-          <div className="w-[40px]">
+      <div className="flex flex-col bg-[#121212] w-full pt-6 text-[#A7A7A7] overflow-auto">
+        <div className="flex flex-row justify-start items-center w-full px-4">
+          <div className="w-[35px]">
             <img
               src="/images/power.jpg"
-              className="w-full h-[40px] rounded-full object-cover"
+              className="w-full h-[35px] rounded-full object-cover"
             />
           </div>
 
@@ -706,9 +706,9 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col pt-5 gap-2 px-6">
+        <div className="flex flex-col pt-5 gap-2 px-4">
           <div className="flex flex-row gap-2">
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
                 src="/images/dailymix-one.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
@@ -717,141 +717,221 @@ function App() {
                 Liked Songs
               </p>
             </button>
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
-                src="/images/dailymix-one.jpeg"
+                src="/images/dailymix-five.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
               />
               <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
+                Old Songs
               </p>
             </button>
           </div>
 
           <div className="flex flex-row gap-2">
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
-                src="/images/dailymix-one.jpeg"
+                src="/images/dailymix-two.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
               />
               <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
+                Chill Mood
               </p>
             </button>
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
-                src="/images/dailymix-one.jpeg"
+                src="/images/playlist-four.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
               />
               <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
-              </p>
-            </button>
-          </div>
-
-          <div className="flex flex-row gap-2">
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
-              <img
-                src="/images/dailymix-one.jpeg"
-                className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
-              />
-              <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
-              </p>
-            </button>
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
-              <img
-                src="/images/dailymix-one.jpeg"
-                className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
-              />
-              <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
+                Mix Vibes
               </p>
             </button>
           </div>
 
           <div className="flex flex-row gap-2">
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
-                src="/images/dailymix-one.jpeg"
+                src="/images/dailymix-three.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
               />
               <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
+                Daily Mix 1
               </p>
             </button>
-            <button className="flex flex-row items-center bg-[#2D2D2D] w-[170px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
               <img
-                src="/images/dailymix-one.jpeg"
+                src="/images/playlist-two.jpeg"
                 className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
               />
               <p className="text-white font-semibold text-[11px] pl-3">
-                Liked Songs
+                Daily Mix 2
+              </p>
+            </button>
+          </div>
+
+          <div className="flex flex-row gap-2">
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+              <img
+                src="/images/dailymix-four.jpeg"
+                className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
+              />
+              <p className="text-white font-semibold text-[11px] pl-3">
+                Daily Mix 3
+              </p>
+            </button>
+            <button className="flex flex-row items-center bg-[#2D2D2D] w-[168px] h-[45px] rounded-[5px] hover:bg-[#414141]">
+              <img
+                src="/images/playlist-five.jpeg"
+                className="w-[50px] h-[45px] object-cover rounded-tl-[5px] rounded-bl-[5px]"
+              />
+              <p className="text-white font-semibold text-[11px] pl-3">
+                Daily Mix 4
               </p>
             </button>
           </div>
         </div>
 
-        <div className="flex justify-start items-start pt-5 px-6">
-          <p className="text-white text-[18px] font-bold">Your playlists</p>
+        <div className="flex justify-start items-start pt-5 px-5 pb-1">
+          <p className="text-white text-[18px] font-bold">Made for Akiesha</p>
         </div>
 
-        <div className="flex flex-row px-4 w-full overflow-auto">
-          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+        <div className="flex flex-row px-2 w-full h-full overflow-auto">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
-              <img
-                src="/images/dailymix-one.jpeg"
-                className="w-[137px] h-[120px] object-cover rounded-sm"
-              />
+                <img
+                  src="/images/dailymix-one.jpeg"
+                  className="w-[137px] h-[120px] object-cover rounded-md"
+                />
               </div>
               <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left pl-3">
-                <p className="text-[11px] font-bold text-white">Old Songs</p>
-                <p className="text-[10px] font-bold">
-                  Playlist
-                </p>
+                <p className="text-[11px] font-bold text-white">Daily Mix 1</p>
+                <p className="text-[10px] font-bold">Playlist</p>
               </div>
             </div>
           </button>
 
-          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
-              <img
-                src="/images/dailymix-one.jpeg"
-                className="w-[137px] h-[120px] object-cover rounded-sm"
-              />
+                <img
+                  src="/images/dailymix-two.jpeg"
+                  className="w-[137px] h-[120px] object-cover rounded-md"
+                />
               </div>
               <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left pl-3">
-                <p className="text-[11px] font-bold text-white">Old Songs</p>
-                <p className="text-[10px] font-bold">
-                  Playlist
-                </p>
+                <p className="text-[11px] font-bold text-white">Daily Mix 2</p>
+                <p className="text-[10px] font-bold">Playlist</p>
               </div>
             </div>
           </button>
 
-          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
-              <img
-                src="/images/dailymix-one.jpeg"
-                className="w-[137px] h-[120px] object-cover rounded-sm"
-              />
+                <img
+                  src="/images/dailymix-three.jpeg"
+                  className="w-[137px] h-[120px] object-cover rounded-md"
+                />
               </div>
               <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left pl-3">
-                <p className="text-[11px] font-bold text-white">Old Songs</p>
-                <p className="text-[10px] font-bold">
-                  Playlist
-                </p>
+                <p className="text-[11px] font-bold text-white">Daily Mix 3</p>
+                <p className="text-[10px] font-bold">Playlist</p>
+              </div>
+            </div>
+          </button>
+
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
+            <div className="flex flex-col justify-start items-start">
+              <div className="flex justify-center items-center w-full">
+                <img
+                  src="/images/dailymix-four.jpeg"
+                  className="w-[137px] h-[120px] object-cover rounded-md"
+                />
+              </div>
+              <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left pl-3">
+                <p className="text-[11px] font-bold text-white">Daily Mix 4</p>
+                <p className="text-[10px] font-bold">Playlist</p>
+              </div>
+            </div>
+          </button>
+
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
+            <div className="flex flex-col justify-start items-start">
+              <div className="flex justify-center items-center w-full">
+                <img
+                  src="/images/dailymix-five.jpeg"
+                  className="w-[137px] h-[120px] object-cover rounded-md"
+                />
+              </div>
+              <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left pl-3">
+                <p className="text-[11px] font-bold text-white">Daily Mix 4</p>
+                <p className="text-[10px] font-bold">Playlist</p>
               </div>
             </div>
           </button>
         </div>
 
+        <div className="flex justify-start items-start pt-2 px-5">
+          <p className="text-white text-[18px] font-bold">Your Top Artist</p>
+        </div>
+
+        <div className="flex flex-col px-2 w-full overflow-auto pt-2">
+          <div className="flex flex-row justify-start">
+            <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
+              <img
+                src="/images/artist-one.jpeg"
+                className="w-[100px] h-[100px] rounded-full object-cover"
+              />
+            </button>
+
+            <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
+              <img
+                src="/images/artist-two.jpeg"
+                className="w-[100px] h-[100px] rounded-full object-cover"
+              />
+            </button>
+
+            <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
+              <img
+                src="/images/artist-three.jpeg"
+                className="w-[100px] h-[100px] rounded-full object-cover"
+              />
+            </button>
+
+            <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
+              <img
+                src="/images/artist-four.jpeg"
+                className="w-[100px] h-[100px] rounded-full object-cover"
+              />
+            </button>
+
+            <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
+              <img
+                src="/images/artist-five.jpeg"
+                className="w-[100px] h-[100px] rounded-full object-cover"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-row justify-center items-center gap-10 py-3 sticky bottom-0 left-0">
+          <button className="flex flex-col justify-center items-center gap-[2px] hover:text-white w-14">
+            <GoHome className="text-[22px]" />
+            <p className="text-[9px] font-medium">Home</p>
+          </button>
+          <button className="flex flex-col justify-center items-center gap-[2px] hover:text-white w-14">
+            <FiSearch className="text-[22px]" />
+            <p className="text-[9px] font-medium">Search</p>
+          </button>
+          <button className="flex flex-col justify-center items-center gap-[2px] hover:text-white w-14">
+            <RiHeadphoneFill className="text-[22px]" />
+            <p className="text-[9px] font-medium">Your Library</p>
+          </button>
+        </div>
       </div>
     </>
   );
 }
-
 export default App;
