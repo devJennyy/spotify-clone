@@ -849,12 +849,12 @@ function App() {
             </div>
           </div>
 
-          <div className="flex justify-start items-start pt-5 px-4 pb-1">
+          <div className="flex justify-start items-start pt-6 px-4 pb-1">
             <p className="text-white text-[18px] font-bold">Made for Akiesha</p>
           </div>
 
           {/*Daily Playlist*/}
-          <div className="flex flex-row pl-[6px] w-full h-full overflow-auto">
+          <div className="flex flex-row pl-[6px] w-full h-full overflow-auto no-scrollbar">
             <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-md">
               <div className="flex flex-col justify-start items-start">
                 <div className="flex justify-center items-center w-full">
@@ -946,7 +946,7 @@ function App() {
           </div>
 
           {/*Top Artist*/}
-          <div className="flex flex-col pl-[6px] w-full overflow-auto pt-2">
+          <div className="flex flex-col pl-[6px] w-full overflow-auto pt-2 no-scrollbar">
             <div className="flex flex-row justify-start">
               <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
                 <div className="flex flex-col justify-start items-start">
