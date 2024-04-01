@@ -796,8 +796,8 @@ function App() {
           <p className="text-white text-[18px] font-bold">Your playlists</p>
         </div>
 
-        <div className="flex flex-row px-4 ">
-          <button className="bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+        <div className="flex flex-row px-4 w-full overflow-auto">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
               <img
@@ -814,7 +814,7 @@ function App() {
             </div>
           </button>
 
-          <button className="bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
               <img
@@ -831,7 +831,7 @@ function App() {
             </div>
           </button>
 
-          <button className="bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
+          <button className="hover:bg-[#1A1A1A] min-w-[156px] h-[177px] rounded-sm">
             <div className="flex flex-col justify-start items-start">
               <div className="flex justify-center items-center w-full">
               <img
