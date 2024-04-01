@@ -95,7 +95,7 @@ function App() {
         </div>
 
         {/*Body Container*/}
-        <div className="flex flex-row justify-between w-full h-full pt-3 text-[#A7A7A7] px-5">
+        <div className="flex flex-row justify-between w-full h-full pt-3 text-[#A7A7A7] px-5 overflow-auto">
           {/*Left Sidebar Container*/}
           <div className="flex flex-col bg-[#121212] w-[400px] h-full rounded-xl pt-7">
             <div className="flex flex-col px-7 gap-8">
@@ -300,8 +300,8 @@ function App() {
           </div>
 
           {/*Mid Container*/}
-          <div className="flex flex-col bg-[#121212] w-[1015px] h-full rounded-xl">
-            <div className="flex flex-row justify-start items-center font-medium text-[14px] gap-2 pt-7 px-7 py-7">
+          <div className="flex flex-col bg-[#121212] w-[1015px] rounded-xl overflow-auto no-scrollbar">
+            <div className="flex flex-row justify-start items-center font-medium text-[14px] gap-2 pt-7 px-7 py-5 sticky top-0 bg-[#121212]">
               <button className="bg-white text-black px-5 py-1 rounded-full">
                 All
               </button>
@@ -314,7 +314,7 @@ function App() {
             </div>
 
             {/*Your Playlist*/}
-            <div className="flex flex-col px-7">
+            <div className="flex flex-col px-7 pt-2">
               <div className="flex flex-row gap-2">
                 <button className="flex flex-row items-center bg-[#2D2D2D] w-[235px] h-[50px] rounded-[5px] hover:bg-[#414141]">
                   <img
@@ -495,43 +495,89 @@ function App() {
             </div>
 
             {/*Top Artist*/}
-            <div className="flex flex-col px-3 mr-1 w-full">
+            <div className="flex flex-col px-3 mr-1 w-fit">
               <div className="flex flex-row justify-start">
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-one.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
+                <button className="flex items-center justify-center hover:bg-[#1A1A1A] min-w-[200px] min-h-[235px] rounded-md">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="/images/artist-one.jpeg"
+                        className="w-[160px] h-[160px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                      <p className="text-[16px] font-bold text-white">
+                        Kanaria
+                      </p>
+                      <p className="text-[12px] font-bold">Artist</p>
+                    </div>
+                  </div>
                 </button>
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-two.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
+
+                <button className="flex items-center justify-center hover:bg-[#1A1A1A] min-w-[200px] min-h-[235px] rounded-md">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="/images/artist-three.jpeg"
+                        className="w-[160px] h-[160px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                      <p className="text-[16px] font-bold text-white">
+                        Kanaria
+                      </p>
+                      <p className="text-[12px] font-bold">Artist</p>
+                    </div>
+                  </div>
                 </button>
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-three.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
+
+                <button className="flex items-center justify-center hover:bg-[#1A1A1A] min-w-[200px] min-h-[235px] rounded-md">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="/images/artist-six.jpeg"
+                        className="w-[160px] h-[160px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                      <p className="text-[16px] font-bold text-white">
+                        Kanaria
+                      </p>
+                      <p className="text-[12px] font-bold">Artist</p>
+                    </div>
+                  </div>
                 </button>
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-four.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
+
+                <button className="flex items-center justify-center hover:bg-[#1A1A1A] min-w-[200px] min-h-[235px] rounded-md">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="/images/artist-four.jpeg"
+                        className="w-[160px] h-[160px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                      <p className="text-[16px] font-bold text-white">
+                        Kanaria
+                      </p>
+                      <p className="text-[12px] font-bold">Artist</p>
+                    </div>
+                  </div>
                 </button>
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-five.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
-                </button>
-                <button className="flex items-center justify-center bg-[#121212] w-[163px] h-[160px] rounded-lg hover:bg-[#1A1A1A]">
-                  <img
-                    src="/images/artist-six.jpeg"
-                    className="w-[145px] h-[140px] rounded-full object-cover"
-                  />
+
+                <button className="flex items-center justify-center hover:bg-[#1A1A1A] min-w-[200px] min-h-[235px] rounded-md">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="/images/artist-five.jpeg"
+                        className="w-[160px] h-[160px] rounded-full object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                      <p className="text-[16px] font-bold text-white">Yoru</p>
+                      <p className="text-[12px] font-bold">Artist</p>
+                    </div>
+                  </div>
                 </button>
               </div>
             </div>
@@ -691,9 +737,9 @@ function App() {
       {/*══════════════════════════════════════════════════════════════════════════ 
                               M O B I L E  C O N T A I N E R                                   
         ══════════════════════════════════════════════════════════════════════════*/}
-      <div className="flex flex-col bg-[#121212] w-full pt-6 text-[#A7A7A7] md:hidden">
+      <div className="flex flex-col bg-[#121212] w-full text-[#A7A7A7] md:hidden">
         {/*Navbar Container*/}
-        <div className="flex flex-row justify-start items-center w-full px-2 bg-[#121212] text-[#A7A7A7] sticky top-0 left-0">
+        <div className="flex flex-row justify-start items-center w-full pt-3 px-2 h-[70px] bg-[#121212] text-[#A7A7A7] sticky top-0 left-0">
           <button className="flex justify-center items-center rounded-full w-[50px] h-[50px] hover:bg-[#1A1A1A]">
             <img
               src="/images/power.jpg"
@@ -902,39 +948,79 @@ function App() {
           {/*Top Artist*/}
           <div className="flex flex-col pl-[6px] w-full overflow-auto pt-2">
             <div className="flex flex-row justify-start">
-              <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
-                <img
-                  src="/images/artist-one.jpeg"
-                  className="w-[100px] h-[100px] rounded-full object-cover"
-                />
+              <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
+                <div className="flex flex-col justify-start items-start">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/artist-one.jpeg"
+                      className="w-[125px] h-[125px] rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                    <p className="text-[11px] font-bold text-white">Kanaria</p>
+                    <p className="text-[10px] font-bold">Artist</p>
+                  </div>
+                </div>
               </button>
 
-              <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
-                <img
-                  src="/images/artist-two.jpeg"
-                  className="w-[100px] h-[100px] rounded-full object-cover"
-                />
+              <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
+                <div className="flex flex-col justify-start items-start">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/artist-two.jpeg"
+                      className="w-[125px] h-[125px] rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                    <p className="text-[11px] font-bold text-white">Kanaria</p>
+                    <p className="text-[10px] font-bold">Artist</p>
+                  </div>
+                </div>
               </button>
 
-              <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
-                <img
-                  src="/images/artist-three.jpeg"
-                  className="w-[100px] h-[100px] rounded-full object-cover"
-                />
+              <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
+                <div className="flex flex-col justify-start items-start">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/artist-three.jpeg"
+                      className="w-[125px] h-[125px] rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                    <p className="text-[11px] font-bold text-white">Kanaria</p>
+                    <p className="text-[10px] font-bold">Artist</p>
+                  </div>
+                </div>
               </button>
 
-              <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
-                <img
-                  src="/images/artist-four.jpeg"
-                  className="w-[100px] h-[100px] rounded-full object-cover"
-                />
+              <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
+                <div className="flex flex-col justify-start items-start">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/artist-four.jpeg"
+                      className="w-[125px] h-[125px] rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                    <p className="text-[11px] font-bold text-white">Kanaria</p>
+                    <p className="text-[10px] font-bold">Artist</p>
+                  </div>
+                </div>
               </button>
 
-              <button className="flex items-center justify-center bg-[#121212] min-w-[120px] h-[120px] rounded-full hover:bg-[#1A1A1A]">
-                <img
-                  src="/images/artist-five.jpeg"
-                  className="w-[100px] h-[100px] rounded-full object-cover"
-                />
+              <button className="flex items-center justify-center bg-[#121212] min-w-[150px] h-[177px] rounded-md hover:bg-[#1A1A1A]">
+                <div className="flex flex-col justify-start items-start">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="/images/artist-five.jpeg"
+                      className="w-[125px] h-[125px] rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-start items-start pt-2 text-left">
+                    <p className="text-[11px] font-bold text-white">Yoru</p>
+                    <p className="text-[10px] font-bold">Artist</p>
+                  </div>
+                </div>
               </button>
             </div>
           </div>
