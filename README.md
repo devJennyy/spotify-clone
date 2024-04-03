@@ -2,8 +2,8 @@
 I re-created the spotify UI for fun! https://spotify-clone-devjenny.vercel.app/
 
 ## Available Screen Sizes
-- 1920 pixels width (desktop/laptop)
-- Mobile devices (supported)
+- 1080p 
+- Mobile devices 
   
 ## Tech Used
 - React
