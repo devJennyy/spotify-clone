@@ -1,7 +1,10 @@
 # Spotify App 
-I re-created the spotify desktop UI for fun! https://spotify-clone-devjenny.vercel.app/
+I re-created the spotify UI for fun! https://spotify-clone-devjenny.vercel.app/
 
-
+## Available Screen Sizes
+- 1080p 
+- Mobile devices 
+  
 ## Tech Used
 - React
 - TailwindCSS
